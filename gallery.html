@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sidney Stevens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Sidney Stevens</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <h1>Project Gallery</h1>
+            <p>A collection of images from my work at SLAC and beyond</p>
+        </div>
+    </section>
+
+    <!-- Injection Molding Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Injection Molding</h2>
+            
+            <div class="gallery-grid">
+                
+                <!-- Glass Huggers Project -->
+                <div class="gallery-item">
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="images/glass_huggers.jpg" alt="Glass Huggers" class="carousel-image active">
+                            <img src="images/glass_huggers_2.jpg" alt="Glass Huggers" class="carousel-image">
+                            <img src="images/glass_huggers_3.jpg" alt="Glass Huggers" class="carousel-image">
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this, 1)"></span>
+                            <span class="dot" onclick="currentSlide(this, 2)"></span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Glass Huggers</h3>
+                        <p>Colorful glass markers</p>
+                    </div>
+                </div>
+
+                <!-- Poker Chips Project -->
+                <div class="gallery-item">
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="images/poker_chips.jpg" alt="Poker Chips" class="carousel-image active">
+                            <img src="images/poker_chips_2.jpg" alt="Poker Chips" class="carousel-image">
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this, 1)"></span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Poker Chips</h3>
+                        <p>Custom injection molded poker chips</p>
+                    </div>
+                </div>
+
+                <!-- Elephant Keychains Project -->
+                <div class="gallery-item">
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="images/elephants_2.jpg" alt="Elephant Keychains" class="carousel-image active">
+                            <img src="images/elephants_3.jpg" alt="Elephant Keychains" class="carousel-image">
+                            <img src="images/elephants_4.jpg" alt="Elephant Keychains" class="carousel-image">
+                            <img src="images/elephants_cnc.jpg" alt="Elephant Keychains CNC" class="carousel-image">
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this, 1)"></span>
+                            <span class="dot" onclick="currentSlide(this, 2)"></span>
+                            <span class="dot" onclick="currentSlide(this, 3)"></span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Elephant Keychains</h3>
+                        <p>Injection molded elephant keychains</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <!-- Metalwork Section -->
+    <section class="gallery-section metalwork-section">
+        <div class="container">
+            <h2 class="section-title">Metalwork</h2>
+            <div class="gallery-grid">
+                
+                <!-- Welding Project -->
+                <div class="gallery-item">
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="images/stool.jpg" alt="Welding - Stool" class="carousel-image active">
+                            <img src="images/stool_pieces.jpg" alt="Welding - Stool Pieces" class="carousel-image">
+                            <img src="images/welding_stool.jpg" alt="Welding - Welding Process" class="carousel-image">
+                            <img src="images/carrying_stool.jpg" alt="Welding - Carrying Stool" class="carousel-image">
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this, 1)"></span>
+                            <span class="dot" onclick="currentSlide(this, 2)"></span>
+                            <span class="dot" onclick="currentSlide(this, 3)"></span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Welding</h3>
+                        <p>Aluminum • TIG welding</p>
+                    </div>
+                </div>
+
+                <!-- Jewelry Holder Project -->
+                <div class="gallery-item">
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="images/holder.jpg" alt="Jewelry Holder" class="carousel-image active">
+                            <img src="images/holder_2.jpg" alt="Jewelry Holder" class="carousel-image">
+                            <img src="images/holder_mini.jpg" alt="Jewelry Holder Mini" class="carousel-image">
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this, 1)"></span>
+                            <span class="dot" onclick="currentSlide(this, 2)"></span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Jewelry Holder</h3>
+                        <p>Aluminum • CNC</p>
+                    </div>
+                </div>
+
+                <!-- Marble Maze Project -->
+                <div class="gallery-item">
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="images/maze_cnc.jpg" alt="Marble Maze CNC" class="carousel-image active">
+                            <img src="images/maze.jpg" alt="Marble Maze" class="carousel-image">
+                            <img src="images/maze_cam.jpg" alt="Marble Maze CAM" class="carousel-image">
+                        </div>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                            <span class="dot" onclick="currentSlide(this, 1)"></span>
+                            <span class="dot" onclick="currentSlide(this, 2)"></span>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Marble Maze</h3>
+                        <p>Aluminum • CNC</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer>
+        <p>Sidney Stevens</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
